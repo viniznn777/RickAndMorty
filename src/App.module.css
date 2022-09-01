@@ -1,0 +1,82 @@
+.App {
+  height: 100vh;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 15px;
+  gap: 30px;
+}
+
+form .divInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.divInput > label {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+form .containerInput {
+  display: flex;
+  gap: 35px;
+}
+
+form input {
+  max-width: 450px;
+  height: 35px;
+  font-size: 1rem;
+  width: 250px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  font-weight: 600;
+  padding-left: 9px;
+  background-color: #b5eefc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.685);
+}
+
+form .button {
+  padding: 10px 25px;
+  max-width: 450px;
+  width: 150px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: rgb(18, 185, 18);
+  color: #ffffff;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.685);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: rgb(10, 129, 10);
+}
+
+@media screen and (max-width: 580px) {
+  form {
+    width: 100%;
+    padding: 0;
+  }
+  .containerInput {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  form .buttonContainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
